@@ -1,7 +1,7 @@
 from app import create_app, db
 from flask_script import Manager, Server
 
-from app.models import User, Post, Comment, Upvote, Downvote
+from app.models import User
 from flask_migrate import Migrate, MigrateCommand
 
 # Creating app instance
@@ -24,8 +24,8 @@ def test():
 
 @manager.shell
 def make_shell_context():
-    return dict(app=app, db=db, User=User, Post=Post, Comment=Comment, Upvote=Upvote, Downvote=Downvote)
+    return dict(app=app, db=db, User=User)
 
 
 if __name__ == '__main__':
-   manager.run()
+    manager.run()
