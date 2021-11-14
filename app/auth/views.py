@@ -5,7 +5,6 @@ from . import auth
 from ..models import User
 from .forms import SignUpForm, LoginForm
 from .. import db
-# from ..email import mail_message
 
 @auth.route("/signup", methods = ["GET", "POST"])
 def register():
@@ -38,7 +37,7 @@ def login():
 
         flash("Invalid Username or Password")
     
-    title = "Login to 60 Seconds"
+    title = "Login to 6Hello world blog"
     return render_template("auth/login.html",
                             login_form = login_form,
                             title = title)
