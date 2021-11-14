@@ -17,6 +17,6 @@ class TestPost(unittest.TestCase):
                                     user_id = self.user_Annabel.id)
 
     def test_instance(self):
-        self.assertTrue(isinstance(self.user_Collins, User))
+        self.assertTrue(isinstance(self.user_Annabel, User))
         self.assertTrue(isinstance(self.new_post, Post))
         self.assertTrue(isinstance(self.new_comment, Comment))
