@@ -18,8 +18,7 @@ def register():
         db.session.add(user)
         db.session.commit()
 
-        # mail_message("Welcome to 60 seconds",
-        #              "email/welcome", user.email, user = user)
+        
         return redirect(url_for("auth.login"))
     title = "Sign Up to 60 Seconds"
     return render_template("auth/signup.html", 
@@ -37,7 +36,7 @@ def login():
 
         flash("Invalid Username or Password")
     
-    title = "Login to 6Hello world blog"
+    title = "Login to Hello world blog"
     return render_template("auth/login.html",
                             login_form = login_form,
                             title = title)
