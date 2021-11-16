@@ -20,7 +20,7 @@ def register():
 
         
         return redirect(url_for("auth.login"))
-    title = "Sign Up to 60 Seconds"
+    title = "Sign Up to Blog"
     return render_template("auth/signup.html", 
                             signup_form = signup_form,
                             title = title)
