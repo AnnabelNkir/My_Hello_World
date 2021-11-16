@@ -1,4 +1,4 @@
-# My_Hello_world
+## My_Hello_world
 A personal blogging website where you can create and share your opinions and other users can read and comment on them. Additionally, the web application displays random quotes to inspire users.
 
 #### By [Annabel Micheni](https://github.com/AnnabelNkir) 
