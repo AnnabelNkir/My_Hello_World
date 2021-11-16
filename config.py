@@ -4,7 +4,7 @@ class Config:
 
     SECRET_KEY = os.environ.get('SECRET_KEY')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    UPLOADED_PHOTOS_DEST = 'app/static/img'
+    UPLOADED_PHOTOS_DEST = 'app/static/photos'
 
     #  email configurations
     MAIL_SERVER = 'smtp.googlemail.com'
@@ -21,18 +21,23 @@ class Config:
     def init_app(app):
         pass
 
-class ProdConfig(Config):
-    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
-    if SQLALCHEMY_DATABASE_URI and SQLALCHEMY_DATABASE_URI.startswith("postgres://"):
-        SQLALCHEMY_DATABASE_URI = SQLALCHEMY_DATABASE_URI.replace("postgres://", "postgresql://", 1)
-    pass
 
 class TestConfig(Config):
     pass
 
 
+class ProdConfig(Config):
+    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
+    if SQLALCHEMY_DATABASE_URI and SQLALCHEMY_DATABASE_URI.startswith("postgres://"):
+        SQLALCHEMY_DATABASE_URI = SQLALCHEMY_DATABASE_URI.replace("postgres://", "postgresql://", 1)
+    
+    pass
+
+
+
+
 class DevConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:Anna123!@localhost/helloblogger'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:Anna123!@localhost/blogs7'
     DEBUG = True
 
 
