@@ -1,3 +1,12 @@
+body{
+    background-image: url(../img/post.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
 .content {
     flex: 1 0 auto;
 }
@@ -45,7 +54,7 @@ footer {
 
 .profile-usertitle-name {
     color: #1b0c5f;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     margin-bottom: 7px;
 }
