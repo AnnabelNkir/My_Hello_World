@@ -46,7 +46,7 @@ The user is expected to navigate seamlessly through the application.
 + A  user can see random quotes on the site.
 + A user can sign in to the blog.
 + A user can create a blog from the application.
-+ A user can like to delete comments that I find insulting or degrading.
++ A user can like to delete comments that they find insulting or degrading.
 + A user can update or delete blogs they have created.
 ```
 
